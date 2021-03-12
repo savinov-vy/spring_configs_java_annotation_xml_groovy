@@ -3,7 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean class = "ru.savinov.springbeans.service.HelloXmlService" id="helloXmlService">
+        <property name="utilService" ref="utilService"/>
+    </bean>
 
-    <bean class = "ru.savinov.springbeans.service.HelloXmlService"/>
-    
+    <bean class="ru.savinov.springbeans.service.UtilService" id="utilService"/>
 </beans>
