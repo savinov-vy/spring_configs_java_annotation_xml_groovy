@@ -17,6 +17,7 @@ public class XmlController {
     public XmlController(HelloXmlService helloXmlService) {
         this.helloXmlService = helloXmlService;
     }
+
     @GetMapping("/xml")
     public String helloXml() {
         return helloXmlService.getHelloXml();
