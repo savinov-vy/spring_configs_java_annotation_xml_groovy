@@ -1,6 +1,7 @@
 package ru.savinov.springbeans.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.savinov.springbeans.service.JavaConfigService;
@@ -11,7 +12,7 @@ public class JavaConfigController {
     private JavaConfigService javaConfigService;
 
     @Autowired
-    public JavaConfigController(JavaConfigService javaConfigService) {
+    public JavaConfigController(@Qualifier("fullJavaConfigService") JavaConfigService javaConfigService) {
         this.javaConfigService = javaConfigService;
     }
 
