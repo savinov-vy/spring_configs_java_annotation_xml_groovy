@@ -5,9 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.savinov.springbeans.service.HelloXmlService;
 
-/**
- * этот класс сконфигурирован в
- */
 @RestController
 public class XmlController {
 

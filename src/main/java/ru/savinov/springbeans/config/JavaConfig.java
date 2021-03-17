@@ -23,5 +23,4 @@ public class JavaConfig {
         JavaConfigService javaConfigService = new JavaConfigService(offsetDateTime.toString());
         return javaConfigService;
     }
-
 }

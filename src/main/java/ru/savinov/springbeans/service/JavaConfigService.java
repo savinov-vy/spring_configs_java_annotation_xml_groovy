@@ -1,6 +1,8 @@
 package ru.savinov.springbeans.service;
 
-
+/**
+ * этот класс сконфигурирован в JavaConfig
+ */
 public class JavaConfigService {
 
     private final String timeOfInitialization;

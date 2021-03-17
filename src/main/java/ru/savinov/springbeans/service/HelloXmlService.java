@@ -1,5 +1,8 @@
 package ru.savinov.springbeans.service;
 
+/**
+ * этот класс сконфигурирован в application-context.xml
+ */
 public class HelloXmlService {
 
     private UtilService utilService;
